@@ -2,7 +2,7 @@
 
 A simple API that queries dexonline.ro, it returns the definitions of the words.
 #
-What is dexonline - [info][https://wiki.dexonline.ro/wiki/Informații]
+What is dexonline - [info]<https://wiki.dexonline.ro/wiki/Informații>
 #
 
 How to install, using pip install?
