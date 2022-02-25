@@ -1,10 +1,8 @@
 # Dexonline.ro API
-#
->No, it is not the official API of dexonline.ro !!!
-#
+
 A simple API that queries dexonline.ro, it returns the definitions of the words.
 #
-What is dexonline.ro - [Info](https://wiki.dexonline.ro/wiki/Informații)
+What is dexonline - [info](https://wiki.dexonline.ro/wiki/Informații)
 #
 
 How to install, using pip install?
@@ -14,12 +12,12 @@ How to install, using pip install?
 #
 
 ### Functionality
-The first thing we need to do is import the library.
+The first thing we need to do is import the library
 ```python
 from dexonlineBK import dexonlineBK as DO
 ```
-The first, and most important, function is getWordDefinition().
-This function returns the list of lists.
+The first, and most important, function is getWordDefinition()
+This function returns the list of lists
 ```python
 definitions = DO.getWordDefinition("neexplicabil")
 
@@ -38,7 +36,7 @@ adj. inexplicabil, neînțeles. (Un fapt ~.)
 Neexplicabil
 ≠ explicabil
 ```
-For more printing comfort I have the toString() function.
+For more printing comfort I have the toString() function
 ```python
 DO.toString(definitions)
 ```
@@ -53,8 +51,8 @@ DEFINITION: adj. inexplicabil, neînțeles. (Un fapt ~.)
 WORD: Neexplicabil
 DEFINITION: ≠ explicabil
 ```
-getWordOfTheDay() function, returns the list with the word and its definition.
-toString() also works with this function.
+getWordOfTheDay() function, returns the list with the word and its definition
+toString() also works with this function
 ```python
 DO.toString(DO.getWordOfTheDay())
 ```
@@ -63,8 +61,8 @@ Output:
 WORD: ARÉIC, -Ă,
 DEFINITION: areici, -ce, adj. (Geol.; despre regiuni, soluri) Lipsit de apă, uscat, arid. [Pr.: -re-ic] – Din fr. aréique.
 ```
-getWordOfTheMonth() function, returns the list with the word and its definition.
-toString() also works with this function.
+getWordOfTheMonth() function, returns the list with the word and its definition
+toString() also works with this function
 ```python
 DO.toString(DO.getWordOfTheMonth())
 ```
@@ -73,5 +71,16 @@ Output:
 WORD: ntur
 DEFINITION: i [At: ALR II, 5752/791 / E: fo] (Reg) Onomatopee care imită trilurile turturicii.
 ```
+reallyExist() function, returns boolean.
+dexonline.ro have list of words in romanina.
+And here you check if this word exists in Romanian.
+```python
+print(DO.reallyExist('mama'))
+```
+Output:
+```python
+True
+```
+#
 #
 >The API is still being tested
