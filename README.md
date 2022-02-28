@@ -1,6 +1,7 @@
 # Dexonline.ro API
 
 A simple API that queries dexonline.ro, it returns the definitions of the words.
+>This is not an official API
 #
 What is dexonline - [info](https://wiki.dexonline.ro/wiki/Informații)
 #
