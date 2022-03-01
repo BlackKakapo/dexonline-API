@@ -1,6 +1,7 @@
 # Dexonline.ro API
 
 A simple API that queries dexonline.ro, it returns the definitions of the words.
+>This is not an official API
 #
 What is dexonline - [info](https://wiki.dexonline.ro/wiki/Informații)
 #
@@ -81,6 +82,28 @@ Output:
 ```python
 True
 ```
-#
+randomWord() function, returns random word.
+dexonline.ro have a page with 100 random words.
+```python
+print(DO.randomWord())
+```
+Output:
+```python
+desfălura
+```
+```python
+DO.toString(DO.getWordDefinition(DO.randomWord()))
+```
+Output:
+```python
+WORD: desfălura
+DEFINITION: vr [At: DUMITRAȘCU, STR. 13 / V: ~lău~, ~fău~ / Pzi: ~rez / E: nct] (Olt) 1 A se descheia la haină. 2 (Pex) A se dezbrăca de haină, rămânând doar în cămașă.
+
+WORD: desfălăura
+DEFINITION: v vz desfălura
+
+WORD: desfăura
+DEFINITION: v vz desfălura
+```
 #
 >The API is still being tested
