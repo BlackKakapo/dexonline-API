@@ -8,7 +8,7 @@ What is dexonline - [info](https://wiki.dexonline.ro/wiki/Informații)
 
 How to install, using pip install?
 
->pip install -i https://test.pypi.org/simple/ dexonlineBK
+>pip install dexonlineBK
 
 #
 
